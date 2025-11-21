@@ -1,7 +1,11 @@
-# 📁 File API
+# API 명세서(회원가입/로그인/교재제작/퀴즈제작)
+
+**https://www.notion.so/API-2a333b8ab6f680f59d17e1a89308e23e**
+
+# File API
 **- 인증:** ❌  
 
-## 1. POST /api/file (파일 업로드)
+### 1. POST /api/file (파일 업로드)
 
 - 요청
 ```json
@@ -20,7 +24,7 @@
 }
 ```
 
-## 2. GET /api/file/by-target (category + id 조합으로 최신 파일 1개 조회)
+### 2. GET /api/file/by-target (category + id 조합으로 최신 파일 1개 조회)
 
 - 요청
 ```json
@@ -50,7 +54,7 @@
   "message": "해당 category/id에 해당하는 파일이 없습니다."
 }
 ```
-## 3. GET /api/file/{fileId} (file_id(PK)로 단일 파일 정보 조회)
+### 3. GET /api/file/{fileId} (file_id(PK)로 단일 파일 정보 조회)
 
 - 요청
 ```json
@@ -74,7 +78,7 @@
 }
 ```
 
-## 4. DELETE /api/file/{fileId} (파일 삭제)
+### 4. DELETE /api/file/{fileId} (파일 삭제)
 
 - 요청
 ```json
@@ -98,7 +102,7 @@
 }
 ```
 
-## category 값 설명(JSON)
+### category 값 설명(JSON)
 ```json
 {
   "user_profile": {
